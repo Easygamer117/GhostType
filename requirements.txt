@@ -1,0 +1,7 @@
+keyboard
+openai
+pyperclip
+pypiwin32
+wmi
+pycaw
+comtypes

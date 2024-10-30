@@ -2,11 +2,13 @@
 
 **GhostType** is a Python tool that runs in the background and automatically sends highlighted text to OpenAI when a specific key combination is pressed. It answers questions based on the highlighted text and can insert the response directly as if typed by the user.
 
+> **Note**: GhostType has been tested exclusively on Windows 11.
+
 ## Features
 
 - **Automatic Text Detection and Response**: Highlight any text and press `Ctrl + Space` to send it to ChatGPT. The response is saved and used when you switch to write mode.
 - **Toggle Write Mode**: Use `Ctrl + Tab` to switch to write mode, where the response is automatically typed in as if you're writing it yourself. Each keystroke you make will type the next character of the ChatGPT response.
-- **Process Monitoring**: GhostType automatically exits if certain monitored processes (e.g., Task Manager, Process Explorer) are detected.
+- **Process Monitoring**: Automatically exits if certain monitored processes (e.g., Task Manager, Process Explorer) are detected.
 - **Mute Indicator**: Mutes the system to indicate that a request has been sent to OpenAI and shows the response status.
 
 ## Installation

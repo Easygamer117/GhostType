@@ -13,6 +13,9 @@ from comtypes import CLSCTX_ALL
 # API key for OpenAI API
 OPENAI_KEY = os.getenv('OPENAI_API_KEY')
 
+# Chatgpt model which should be used a.e. 4o or o3-mini
+CHATGPT_MODEL = "o3-mini"
+
 # Keybindings for functions
 KEYBINDS = {
     'get_result': 'ctrl+space',
@@ -68,7 +71,7 @@ class Controller:
         volume.SetMute(not initally_mute, None)
 
         response = self.openai_client.chat.completions.create(
-            model='gpt-4o',
+            model=CHATGPT_MODEL,
             messages=[
                 {
                     'role': 'user',
